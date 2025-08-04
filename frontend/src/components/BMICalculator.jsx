@@ -29,10 +29,10 @@ const BMICalculator = () => {
   };
 
   const handleCalculate = async () => {
-    if (!formData.height || !formData.weight || !formData.age || !formData.gender) {
+    if (!formData.height || !formData.weight || !formData.age) {
       toast({
         title: "Missing Information",
-        description: "Please fill in all required fields.",
+        description: "Please fill in height, weight, and age.",
         variant: "destructive"
       });
       return;
